@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+	 <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	
+	<h1>Calculator</h1>
+	
+	<div class="card">
+		<div class="cal-head">
+			<input type="text" id="resualt" maxlength="10"/>
+		</div>
+		<div class="cal-body">
+			<div>
+				<input type="button" class="btn" value="C" onclick="clearR()"/>
+				<input type="button" class="btn" value="+/-" onclick="inserNumber('+/-')"/>
+				<input type="button" class="btn" value="%" onclick="inserNumber('%')"/>
+				<input type="button" class="btn btn-style" value="/" onclick="inserNumber('/')"/>
+			</div>
+			
+			<div>
+				<input type="button" class="btn" value="7" onclick="inserNumber(7)"/>
+				<input type="button" class="btn" value="8" onclick="inserNumber(8)"/>
+				<input type="button" class="btn" value="9" onclick="inserNumber(9)"/>
+				<input type="button" class="btn btn-style" value="X" onclick="inserNumber('*')"/>
+			</div>
+			
+			<div>
+				<input type="button" class="btn" value="4" onclick="inserNumber(4)"/>
+				<input type="button" class="btn" value="5" onclick="inserNumber(5)"/>
+				<input type="button" class="btn" value="6" onclick="inserNumber(6)"/>
+				<input type="button" class="btn btn-style" value="-" onclick="inserNumber('-')"/>
+			</div>
+			
+			<div>
+				<input type="button" class="btn" value="1" onclick="inserNumber(1)"/>
+				<input type="button" class="btn" value="2" onclick="inserNumber(2)"/>
+				<input type="button" class="btn" value="3" onclick="inserNumber(3)"/>
+				<input type="button" class="btn btn-style" value="+" onclick="inserNumber('+')"/>
+			</div>
+			
+			<div>
+				<input type="button" class="btn" value="0" onclick="inserNumber(0)"/>
+				<input type="button" class="btn" value="." onclick="inserNumber('.')"/>
+				<input type="button" class="btn" value="DEL" onclick="del()"/>
+				<input type="button" class="btn" value="=" style="background-color:orange" onclick="calculate()"/>
+			</div>
+			
+			
+			
+		</div>
+	</div>
+			<div class="b">
+				<p>Design By-Mominur Rahman<p/>
+			</div>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
